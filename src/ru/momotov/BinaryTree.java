@@ -9,6 +9,7 @@ public class BinaryTree {
         root = null;
     }
 
+    // Метод добавления значения в дерево
     public void add(String value) {
         Node newNode = new Node(value);
         if (root == null) {
@@ -36,6 +37,7 @@ public class BinaryTree {
         }
     }
 
+    // Метод получения максимального значения в дереве
     public String max() {
         if (root == null) {
             return null;
@@ -49,9 +51,10 @@ public class BinaryTree {
         return maxValue;
     }
 
+    // Метод вывода всех элементов дерева в порядке убывания
     public void print() {
         if (root == null) {
-            System.out.println("Binary three is empty!");
+            System.out.println("Binary tree is empty!");
             return;
         }
         print(root);
